@@ -18,6 +18,6 @@ public class OvernightPackage extends Package {
 
     @Override
     public double calculateCost() {
-        return weight * (costPerOnce + af);
+        return super.calculateCost() + (weight * af);
     }
 }
